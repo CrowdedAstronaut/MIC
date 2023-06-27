@@ -1,0 +1,82 @@
+* {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: url("./assets/inspiration_hub.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: white;
+}
+
+.box {
+  border-radius: 0.31rem;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:24px;
+  
+}
+.hidden {
+  visibility: hidden;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-container {
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 10px;
+  max-width: min(100% + 0px, 0% + 1280px);
+  height: 768px;
+  background-image: url("./assets/MIC_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.box {
+  background-color: rgba(
+    237,
+    233,
+    233,
+    0.35
+  ); /* Replace with your desired background color */
+  color: white; /* Replace with your desired text color */
+  font-size: 24px; /* Replace with your desired font size */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  visibility: hidden;
+}
+
+#vr_simulation:hover ~ .game-container {
+  background-image: url("./assets/vr_simulation.svg");
+}
+
+#make_it_center_quest:hover ~ .game-container {
+  background-image: url("./assets/make_it_center_quest.svg");
+}
+
+#inspiration-hub:hover ~ .game-container {
+  background-image: url("./assets/inspiration-hub.png");
+}
