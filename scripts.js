@@ -1,10 +1,20 @@
-let containerElement = document.getElementById("container");
+// Get the .game-container element
+const gameContainer = document.querySelector(".game-container");
 
-containerElement.addEventListener("click", changeColor);
+// Get all elements with an ID
+const elementsWithId = document.querySelectorAll("[id]");
 
-function changeColor() {
-  let random1 = Math.floor(Math.random() * 255 + 1);
-  let random2 = Math.floor(Math.random() * 255 + 1);
-  let random3 = Math.floor(Math.random() * 255 + 1);
-  document.body.style.backgroundColor = `rgb(${random1}, ${random2}, ${random3})`;
-}
+// Loop through each element with an ID
+elementsWithId.forEach((element) => {
+  // Add a mouseover event listener to each element
+  element.addEventListener("mouseover", () => {
+    // Get the ID of the hovered element
+    const hoveredElementId = element.id;
+
+    // Construct the URL of the background image based on the ID
+    const backgroundImageUrl = `./assets/bg_${hoveredElementId}.svg`;
+
+    // Set the background image of the .game-container
+    gameContainer.style.backgroundImage = `url(${backgroundImageUrl})`;
+  });
+});

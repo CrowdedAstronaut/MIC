@@ -11,7 +11,7 @@
   grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  background-image: url("./assets/inspiration_hub.svg");
+  background-image: url("./assets/vr_simulation.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -45,11 +45,16 @@ body {
   grid-gap: 10px;
   max-width: min(100% + 0px, 0% + 1280px);
   height: 768px;
-  background-image: url("./assets/MIC_bg.png");
+  background-image: url("./assets/vr_simulation.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+  position: relative;
 }
+
+/* img {
+  max-width: 100px;
+} */
 
 .box {
   background-color: rgba(
@@ -68,15 +73,9 @@ body {
 .hidden {
   visibility: hidden;
 }
-
-#vr_simulation:hover ~ .game-container {
-  background-image: url("./assets/vr_simulation.svg");
+.permanently-hidden {
+  display: none;
 }
-
-#make_it_center_quest:hover ~ .game-container {
-  background-image: url("./assets/make_it_center_quest.svg");
-}
-
-#inspiration-hub:hover ~ .game-container {
-  background-image: url("./assets/inspiration-hub.png");
+.shown:hover {
+  background-color: yellow;
 }

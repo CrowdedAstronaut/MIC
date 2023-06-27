@@ -11,14 +11,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
   </head>
   <body>
-    <div class="game-container">
+    <section class="game-container">
       <div class="box hidden">1</div>
       <div class="box hidden">2</div>
       <div class="box hidden">3</div>
       <div class="box hidden">4</div>
-      <div class="box" id="vr-simulation">VR Simulation</div>
+      <div class="box shown" id="vr-simulation">VR Simulation</div>
       <div class="box hidden">6</div>
       <div class="box hidden">7</div>
       <div class="box hidden">8</div>
@@ -26,11 +27,11 @@
       <div class="box hidden">10</div>
       <div class="box hidden">11</div>
       <div class="box hidden">12</div>
-      <div class="box" id="innovation-hub">Innovation Hub</div>
+      <div class="box shown" id="innovation-hub">Innovation Hub</div>
       <div class="box hidden">14</div>
       <div class="box hidden">15</div>
       <div class="box hidden">16</div>
-      <div class="box" id="mic-quest">Make It Center Quest</div>
+      <div class="box shown" id="mic-quest">Make It Center Quest</div>
       <div class="box hidden">18</div>
       <div class="box hidden">19</div>
       <div class="box hidden">20</div>
@@ -38,7 +39,7 @@
       <div class="box hidden">22</div>
       <div class="box hidden">23</div>
       <div class="box hidden">24</div>
-      <div class="box" id="inspiration-hub">Inspiration Hub</div>
+      <div class="box shown" id="inspiration-hub">Inspiration Hub</div>
       <div class="box hidden">26</div>
       <div class="box hidden">27</div>
       <div class="box hidden">28</div>
@@ -51,7 +52,7 @@
       <div class="box hidden">35</div>
       <div class="box hidden">36</div>
       <div class="box hidden">37</div>
-      <div class="box" id="discovery-zone">Discovery Zone</div>
+      <div class="box shown" id="discovery-zone">Discovery Zone</div>
       <div class="box hidden">39</div>
       <div class="box hidden">40</div>
       <div class="box hidden">41</div>
@@ -70,15 +71,17 @@
       <div class="box hidden">54</div>
       <div class="box hidden">55</div>
       <div class="box hidden">56</div>
-      <div class="box" id="acc-showcase">ACC Showcase</div>
+      <div class="box shown" id="acc-showcase">ACC Showcase</div>
       <div class="box hidden">58</div>
       <div class="box hidden">59</div>
       <div class="box hidden">60</div>
       <div class="box hidden">61</div>
       <div class="box hidden">62</div>
-      <div class="box hidden">
+      <div class="box shown">
         <h2>Experience</h2>
-        <div class="hidden"><img src="./assets/MIC_logo.svg" alt="" /></div>
+        <div class="permanently-hidden">
+          <img src="./assets/MIC_logo.svg" alt="" />
+        </div>
       </div>
       <div class="box hidden">64</div>
       <div class="box hidden">65</div>
@@ -89,12 +92,12 @@
       <div class="box hidden">70</div>
       <div class="box hidden">71</div>
       <div class="box hidden">72</div>
-      <div class="box" id="showroom">Showroom</div>
+      <div class="box shown" id="showroom">Showroom</div>
       <div class="box hidden">74</div>
       <div class="box hidden">75</div>
       <div class="box hidden">76</div>
       <div class="box hidden">77</div>
-      <div class="box" id="make-it-services">Make It Services</div>
+      <div class="box shown" id="make-it-services">Make It Services</div>
       <div class="box hidden">79</div>
       <div class="box hidden">80</div>
       <div class="box hidden">81</div>
@@ -102,11 +105,11 @@
       <div class="box hidden">83</div>
       <div class="box hidden">84</div>
       <div class="box hidden">85</div>
-      <div class="box" id="fab-lab">Fab Lab</div>
+      <div class="box shown" id="fab-lab">Fab Lab</div>
       <div class="box hidden">87</div>
       <div class="box hidden">88</div>
       <div class="box hidden">89</div>
       <div class="box hidden">90</div>
-    </div>
+    </section>
   </body>
 </html>
