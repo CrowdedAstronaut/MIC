@@ -12,7 +12,7 @@ elementsWithId.forEach((element) => {
     const hoveredElementId = element.id;
 
     // Construct the URL of the background image based on the ID
-    const backgroundImageUrl = `./assets/bg_${hoveredElementId}.svg`;
+    const backgroundImageUrl = `.https://github.com/CrowdedAstronaut/MIC/blob/main/assets/${hoveredElementId}.svg`;
 
     // Set the background image of the .game-container
     gameContainer.style.backgroundImage = `url(${backgroundImageUrl})`;
